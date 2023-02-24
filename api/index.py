@@ -31,7 +31,7 @@ def about():
     return 'About'
 
 
-@app.route('/api/v1/get-docx')
+@app.route('/api/v1/get-docx', methods=['POST'])
 def create_doc():
     # Get data from the request
     data = request.get_json()
